@@ -1,0 +1,14 @@
+<%- include('partials/header') -%>
+    <video id="videoElement" autoplay></video>
+    <script>
+      // Access the user's webcam and display it in the video element
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+          var video = document.getElementById("videoElement");
+          video.srcObject = stream;
+        })
+        .catch(function(err) {
+          console.log("Error accessing webcam: " + err);
+        });
+    </script>
+<%- include('partials/footer') -%>

@@ -570,3 +570,19 @@ a.item {
 .new-path-link:hover {
   color: #353e63;
 }
+
+#face-btn {
+  margin-left: 2rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  color: #61afbd;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+#face-btn:hover {
+  background-color: #61afbd;
+  color: #ffffff;
+}

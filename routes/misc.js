@@ -55,6 +55,10 @@ router.get('/overview', isLoggedIn,  function(req, res){
     });
 });
 
+router.get('/face',isLoggedIn,function(req,res){
+    res.render('face',{ title: 'Face'})
+})
+
 // ENTRY API ROUTES
 router.get("/api/user/:id/entries", isLoggedIn, function(req, res) {
     User.findById(req.user.id).populate('entries').then(function(data){
