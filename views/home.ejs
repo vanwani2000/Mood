@@ -1,0 +1,80 @@
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
+
+<div class="ui masthead segment">
+    <div class="jumbotron">
+      <!-- MAIN CONTENT -->
+      <div class="header-container">
+        <div class="weather">
+          <img id='weather-icon'>
+          <p id='temp'></p>
+        </div>
+        <h1 class="ui header welcome">Welcome <%= currentUser %>! <br>
+          How are you feeling today?</h1>
+        <h2 id="quote"></h2>
+        <hr class="short" />
+        <h4 id="author"></h4>
+      </div>
+      <a href="/newentry" id="add-entry-btn">
+        Add Entry
+      </a>
+      <div class="arrow">
+        <i class="angle down icon"></i>
+      </div>
+    </div>
+  </div>
+
+<div class="ui container hotlines">
+    <h3 class="hotlines-title">Mental Health Hotlines</h3>
+    <table id="hotlines-table" class="ui selectable celled table">
+      <thead class="hotlines-header">
+        <tr>
+          <td>Hotline</td>
+          <td>Number</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SAMHSA National Hotline</td>
+          <td>1-800-662-HELP (4357).</td>
+        </tr>
+        <tr>
+          <td>Anxiety and Depression Association of India (ADAI)</td>
+          <td>1800-599-0019 </td>
+        </tr>
+        <tr>
+          <td>Depression and Bipolar Support Alliance (DBSA)</td>
+          <td>1800-599-0019</td>
+        </tr>
+        <tr>
+          <td>International OCD Foundation</td>
+          <td>(617) 973-5801</td>
+        </tr>
+        <tr>
+          <td>National Center of Excellence of Eating Disorders (NCEED)</td>
+          <td>1-877-SAMHSA-7</td>
+        </tr>
+        <tr>
+          <td>
+            Schizophrenia and Related Disorders Alliance of India (SARDAI)
+          </td>
+          <td>91-020-4361006</td>
+        </tr>
+        <tr>
+          <td>Indain Foundation for Suicide Prevention</td>
+          <td>+(91)-80470-96367</td>
+        </tr>
+        <tr>
+          <td>National Domestic Violence Hotline</td>
+          <td>	+91-99965-53638</td>
+        </tr>
+        <tr>
+          <td>Suicide Prevention Hotline</td>
+          <td>9152987821</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<%- include('partials/footer') -%>

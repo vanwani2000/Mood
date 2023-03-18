@@ -1,0 +1,88 @@
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
+
+<main class="overview-containter">
+  <div class="date-controller">
+    <div id="prev-month">
+      <i class="angle left icon"></i>
+    </div>
+    <div class="display-date"></div>
+    <div id="next-month">
+      <i class="angle right icon"></i>
+    </div>
+  </div>
+  <div id="mood-states" class="ui grid">
+    <div class="five column row">
+      <div class="column">
+        <button
+          id="depressed"
+          class="mood"
+          data-mood="depressed"
+          data-color="#5C8B93"
+          value="1"
+        ></button>
+        <p class="mood-text">depressed</p>
+      </div>
+      <div class="column">
+        <button
+          id="sad"
+          class="mood"
+          data-mood="sad"
+          data-color="#76B3BE"
+          value="2"
+        ></button>
+        <p class="mood-text">sad</p>
+      </div>
+      <div class="column">
+        <button
+          id="moderate"
+          class="mood"
+          data-mood="moderate"
+          data-color="#8FDAE7"
+          value="3"
+        ></button>
+        <p class="mood-text">moderate</p>
+      </div>
+      <div class="column">
+        <button
+          id="happy"
+          class="mood"
+          data-mood="happy"
+          data-color="#A3E0EB"
+          value="4"
+        ></button>
+        <p class="mood-text">happy</p>
+      </div>
+      <div class="column">
+        <button
+          id="exhilirated"
+          class="mood"
+          data-mood="exhilirated"
+          data-color="#C1EAF1"
+          value="5"
+        ></button>
+        <p class="mood-text">exhilirated</p>
+      </div>
+    </div>
+  </div>
+    <div class="table-div">
+      <table id="tracker-table">
+        <thead id="category">
+          <tr>
+            <td class="tracker-table-header-date">Date</td>
+            <td>Comments</td>
+          </tr>
+        </thead>
+        <tbody class="tracker-table-body">
+        </tbody>
+      </table>
+    </div>
+
+    <section class="graph-container">
+      <h3 class="graph-year year"></h3>
+      <div class="graph"></div>
+    </section>
+  </main>
+
+<%- include('partials/footer') -%>
